@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkvolunteer_aid"]=self["webpackChunkvolunteer_aid"]||[]).push([[556],{9556:function(e,n,r){r.r(n),r.d(n,{default:function(){return i}});var t=r(6252);function u(e,n,r,u,a,d){return(0,t.wg)(),(0,t.iD)("div")}var a={data(){return{}},mounted(){},methods:{},props:{}},d=r(3744);const o=(0,d.Z)(a,[["render",u]]);var i=o}}]);
+//# sourceMappingURL=556.accd7a6b.js.map
