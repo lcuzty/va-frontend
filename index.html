@@ -1,0 +1,157 @@
+<!doctype html><html lang="" style="overflow-y: hidden"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="/favicon.ico"><title>志愿助手</title><style>.dots {
+            width: var(--size);
+            height: var(--size);
+            position: relative;
+        }
+
+        .dot {
+            width: var(--size);
+            height: var(--size);
+            animation: dwl-dot-spin calc(var(--speed) * 5) infinite linear both;
+            animation-delay: calc(var(--i) * var(--speed) / (var(--dot-count) + 2) * -1);
+            rotate: calc(var(--i) * var(--spread) / (var(--dot-count) - 1));
+            position: absolute;
+        }
+
+        .dot::before {
+            content: "";
+            display: block;
+            width: var(--dot-size);
+            height: var(--dot-size);
+            background-color: var(--color);
+            border-radius: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            bottom: 0;
+            left: 50%;
+        }
+
+        @keyframes dwl-dot-spin {
+            0% {
+                transform: rotate(0deg);
+                animation-timing-function: cubic-bezier(0.390, 0.575, 0.565, 1.000);
+                opacity: 1;
+            }
+
+            2% {
+                transform: rotate(20deg);
+                animation-timing-function: linear;
+                opacity: 1;
+            }
+
+            30% {
+                transform: rotate(180deg);
+                animation-timing-function: cubic-bezier(0.445, 0.050, 0.550, 0.950);
+                opacity: 1;
+            }
+
+            41% {
+                transform: rotate(380deg);
+                animation-timing-function: linear;
+                opacity: 1;
+            }
+
+            69% {
+                transform: rotate(520deg);
+                animation-timing-function: cubic-bezier(0.445, 0.050, 0.550, 0.950);
+                opacity: 1;
+            }
+
+            76% {
+                opacity: 1;
+            }
+
+            76.1% {
+                opacity: 0;
+            }
+
+            80% {
+                transform: rotate(720deg);
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        ::selection {  
+            background-color: rgba(128,128,128,0.3);
+            outline: none;
+        }
+
+        button{
+            padding: 6px 20px;
+            border: 0;
+            /* background-color: var(--color-neutral-1); */
+            background-color: transparent;
+            border-radius: 3px;
+            margin-top: 10px;
+            margin-right: 5px;
+            border: 1px solid rgb(128,128,128) !important;
+            cursor: pointer;
+            transition: background-color .05s cubic-bezier(0.23, 1, 0.320, 1);
+            color: var(--color-neutral-10) !important;
+        }
+
+        button:hover{
+            background-color: rgba(128,128,128,0.1) !important;
+            /* background-color: var(--color-neutral-2) !important; */
+            /* border: 2px solid var(--color-neutral-3) !important; */
+        }
+
+        button:active{
+            background-color: rgba(128,128,128,0.2) !important;
+            /* background-color: var(--color-neutral-3) !important; */
+            /* border: 2px solid var(--color-neutral-3) !important; */
+        }
+
+      *{
+        margin: 0 0;
+        padding: 0 0;
+        box-sizing: border-box;
+        user-select: none;
+        font-family: 微软雅黑, roboto,"Noto Sans Myanmar UI",arial,sans-serif;
+      }
+
+        ::-webkit-scrollbar{
+            background: transparent;
+            position: fixed;
+            width: 8px;
+            overflow: visible;
+            margin-right: 10px;
+        }
+
+        ::selection{
+            background-color: rgba(128,128,128,0.4);
+        }
+
+        ::-webkit-scrollbar-button{
+            display: none;
+        }
+
+        ::-webkit-scrollbar-track{
+            display: none;
+            background: transparent;
+            position: fixed;
+        }
+
+        ::-webkit-scrollbar-track-piece{
+            background-color: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb{
+            background-color: rgba(128,128,128,0.3);
+            width: 3px;
+            border-radius: 3px;
+        }
+
+        .hyper-link{
+            cursor: pointer;
+            color: rgb(0,120,215);
+            text-decoration: underline;
+            font-size: 14px;
+        }
+
+        ::selection{
+            outline: none;
+        }</style><script defer="defer" src="/js/chunk-vendors.7232e3aa.js"></script><script defer="defer" src="/js/app.72fd2062.js"></script><link href="/css/chunk-vendors.423dd579.css" rel="stylesheet"></head><body style="overflow-y: hidden"><noscript><strong>We're sorry but volunteer_aid doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div></body></html>
